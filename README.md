@@ -106,6 +106,7 @@ function toggleSuccessMessage() {
 - [Styling lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists) - taught me how to use background-image for the list-item.
 - [Custom CSS Bullets with ::marker](https://www.svgbackgrounds.com/custom-css-bullets-with-marker/)
 - [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - use JavaScript to take control over the look and feel of native error messages with the Constraint Validation API.
+- [Making SVGs Responsive with CSS](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/)
 
 
 ## Author
