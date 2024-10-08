@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/edpau/fm_four-card-feature-section)
-- [Live Site URL](https://edpau.github.io/fm_four-card-feature-section/)
+- [Solution URL](https://github.com/edpau/fm_newsletter-sign-up)
+- [Live Site URL](https://edpau.github.io/fm_newsletter-sign-up/)
 
 ## My process
 
