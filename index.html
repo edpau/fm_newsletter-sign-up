@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join 60,000+ product managers receiving monthly updates on product discovery, building what matters, and measuring success. Sign up for our newsletter today!"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  <!-- Sign-up form start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Stay updated!
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <article class="card">
+        <picture class="card__picture">
+          <source
+            media="(min-width: 930px)"
+            srcset="./images/illustration-sign-up-desktop.svg"
+          />
+          <img
+            card="card__image"
+            src="./images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
+        </picture>
 
-  Join 60,000+ product managers receiving monthly updates on:
+        <!-- <img src="./images/window_resize.png" alt="" width="375" height="284"> -->
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+        <section class="card__content">
+          <h2 class="card__title">Stay updated!</h2>
+          <p class="card__description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
 
-  Email address
-  email@company.com
+          <ul class="card__list">
+            <li class="card__list-item">
+              Product discovery and building what matters
+            </li>
+            <li class="card__list-item">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="card__list-item">And much more!</li>
+          </ul>
 
-  Subscribe to monthly newsletter
+          <form class="card__form" novalidate>
+            <label class="card__form-label" for="email-input"
+              >Email address
+              <span class="card__form-error" aria-live="polite"></span
+            ></label>
 
-  <!-- Sign-up form end -->
+            <input
+              type="email"
+              class="card__form-input"
+              id="email-input"
+              placeholder="email@company.com"
+              required
+            />
+            <button class="card__form-button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </section>
 
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <section class="card__success hidden">
+          <div class="card__success-content">
+            <img
+              class="card__success-icon"
+              src="./images/icon-success.svg"
+              alt=""
+              width="64"
+              height="64"
+            />
+            <h2 class="card__success-title">Thanks for subscribing!</h2>
+            <p class="card__success-message">
+              A confirmation email has been sent to
+              <span class="card__success-email"></span>. Please open it and
+              click the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button class="card__dismiss-button">Dismiss message</button>
+        </section>
+      </article>
+    </main>
+    <script src="./dist/index.js"></script>
+  </body>
 </html>
