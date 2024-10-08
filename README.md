@@ -100,12 +100,17 @@ function toggleSuccessMessage() {
   };
 }
 ```
+#### use SVG in an img tag
+- You have to delete the width and height attributes from the SVG and instead apply them to the <img> Tag.
+- I used `height: auto` in CSS, so after apply width and height attributes to the <img> Tag, the SVG is still responsive.
 
 ### Useful resources
 
 - [Styling lists](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists) - taught me how to use background-image for the list-item.
 - [Custom CSS Bullets with ::marker](https://www.svgbackgrounds.com/custom-css-bullets-with-marker/)
 - [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - use JavaScript to take control over the look and feel of native error messages with the Constraint Validation API.
+- [Making SVGs Responsive with CSS](https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/)
+- [Responsive SVG](https://12daysofweb.dev/2023/responsive-svgs/) - "You can also save the code as an SVG file and then use an image tag. Please note that for this approach, you have to delete the width and height attributes from the SVG and instead apply them to the <img> Tag."
 
 
 ## Author
